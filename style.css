@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightcoral;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    text-align: center;
+    font-size: 36px;
+    color: darkgreen;
+    margin-top: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    background-color: maroon;
+    color: lightyellow;
+}
+
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px dotted red;
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+}
+
+.grid {
+    width: 90px;
+    height: 90px;
+    border: 3px solid maroon;
+    text-align: center;
+    font-size: 80px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 170px;
+    border-radius: 15px;
+    border: none;
+    font-size: 24px;
+    background-color: maroon;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#ruleShow {
+    display: none;
+}
+
+.rule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lawngreen;
+    width: 300px;
+    border: 2px solid darkgreen;
+    padding: 30px;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.rule h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.close {
+    font-size: 18px;
+    margin: 30px 20px;
+}
+
+.rule ul li {
+    list-style-type: decimal;
+    line-height: 1.5;
+}
